@@ -14,12 +14,11 @@ body{
     width: 400px;
     height: 500px;
     background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 350px;
-    
+    margin-top: 350px;  
 }
 .card .header{
     display: flex;
@@ -30,65 +29,86 @@ body{
 
 .card .image img{
     width: 400px;
-    height: 500px;
-  
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+   right: 20px;
+   bottom: 30px;
 }
 
 .body{
- 
+    padding: 20px;
+  
 }
 
 .body .main-text{
-    
+
 }
 
 .body .main-text h1{
+    text-align: center;
 
 }
 
 .body .main-text p{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(217, 15, 207);
+    margin-top: -50px;
     
 }
 
 .body .sub-text{
-    
-}
-
-.body .sub-text p{
-    
+   margin-top: 20px;
+    text-align: center;
+    color: gray;
 }
 
 .footer{
-    
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    margin: 20px 0 80px 0;
+    background-color: rgb(196, 35, 196);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 }
 
 .footer .read{
-
+    text-align: center;
 }
 .footer .read p{
+    font-weight: bold;
+    color: white;
     
 }  
 .footer .read h3{
+    color: white;
     
 }
 .footer .views{
-
+    text-align: center;
 }
 .footer .views p{
+    font-weight: bold;
+    color: white;
 
 }
 .footer .views h3{
-
+    color: white;
 }
 
 .footer .comment{
-
+    text-align: center; 
 }
 .footer .comment p{
-    
+    font-weight: bold;
+    color: white;
 }  
 .footer .comment h3{
-    
+    color: white;   
 }
 
 
