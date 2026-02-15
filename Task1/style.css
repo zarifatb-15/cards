@@ -1,56 +1,58 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 body {
   background: linear-gradient(#eeaeca 0%, #94e9f5 100%);
-}
-#asd {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-.cards {
+#cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.card {
   width: 500px;
   height: 600px;
   background-color: white;
   border-radius: 30px;
-}
-
-.cards .card {
-  width: 100%;
-  height: 100%;
-}
-
-.cards .card .header {
-  width: 100%;
-  height: 300px;
-}
-.cards .card .header .image {
+  overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
-.cards .card .header .image img {
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  width: 500px;
+.card .header {
+  width: 100%;
   height: 300px;
+  overflow: hidden;
 }
-.cards .card .main-text .headtext {
-  padding-bottom: 10px;
-  padding-left: 10px;
+.card:hover .header img {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
-.cards .main-text {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
+.card .header .image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: 0.4s;
 }
-.cards .main-text .headtext p {
+
+.card .main-text {
+  padding: 20px;
+}
+
+.card .main-text .headtext p {
   background: linear-gradient(90deg, #eeaeca 0%, #2d27da 100%);
   width: 100px;
   height: 30px;
@@ -59,43 +61,33 @@ body {
   align-items: center;
   color: white;
   border-radius: 50px;
+  margin-bottom: 10px;
 }
 
-.cards .main-text .headtext h1 {
-  font-size: 30px;
-  margin-top: 10px;
+.card .main-text h1 {
+  font-size: 28px;
   margin-bottom: 10px;
-  padding: 10px;
-  padding-left: 100px;
 }
-.cards .main-text .text {
-  padding: 10px;
+
+.card .main-text .text p {
+  color: #333;
+  line-height: 1.4;
 }
-.footer {
+
+.card .footer {
   display: flex;
-  gap: 2px;
-  height: 220px;
+  gap: 15px;
   align-items: center;
+  padding: 20px;
+  margin-top: auto;
 }
-.main-text h1 {
-  padding-left: 15px;
-}
-.footer .img {
-}
-.footer .img img {
+
+.card .footer .img img {
   width: 50px;
   height: 50px;
-  border-radius: 50px;
-  margin: 10px;
-  margin-left: 20px;
-  margin-bottom: 85px;
+  border-radius: 50%;
 }
-.footer .name {
-  padding-bottom: 80px;
-}
-.footer .name h3 {
-  font-size: 18px;
-}
-.footer .name p {
+
+.card .footer .name p {
   color: gray;
 }
