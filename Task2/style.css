@@ -1,0 +1,94 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('images/pngtree-lush-green-spring-nature-background-picture-image_16619614.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.card{
+    width: 400px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 350px;
+    
+}
+.card .header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.card .image img{
+    width: 400px;
+    height: 500px;
+  
+}
+
+.body{
+ 
+}
+
+.body .main-text{
+    
+}
+
+.body .main-text h1{
+
+}
+
+.body .main-text p{
+    
+}
+
+.body .sub-text{
+    
+}
+
+.body .sub-text p{
+    
+}
+
+.footer{
+    
+}
+
+.footer .read{
+
+}
+.footer .read p{
+    
+}  
+.footer .read h3{
+    
+}
+.footer .views{
+
+}
+.footer .views p{
+
+}
+.footer .views h3{
+
+}
+
+.footer .comment{
+
+}
+.footer .comment p{
+    
+}  
+.footer .comment h3{
+    
+}
+
+
